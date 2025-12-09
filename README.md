@@ -1,4 +1,23 @@
-<<<<<<< HEAD
+Final Cloud App with Database
+Overview
+This is a Django-based web application that allows users to explore courses, enroll, take exams, and view results. The app includes user authentication, instructor and learner roles, and dynamic course content management.
+The project was developed as part of a full-stack web development course, focusing on cloud-ready applications with database integration.
+Features
+User Authentication: Registration, login, logout.
+Course Management: View courses, lessons, and associated content.
+Enrollment: Learners can enroll in courses and track progress.
+Exams:
+Multiple-choice questions with multiple correct answers
+Submissions tracked per learner
+Real-time grading and feedback
+Color-coded exam result display (correct, wrong, not selected)
+Instructor Role: Ability to manage courses and lessons.
+Responsive UI: Built with Bootstrap 4.5 for mobile and desktop friendliness.
+Technologies Used
+Backend: Django 3.x
+Frontend: HTML, Bootstrap 4.5, JavaScript, jQuery
+Database: SQLite (default for Django)
+Version Control: Git, GitHub
 
 **General Notes**
 
