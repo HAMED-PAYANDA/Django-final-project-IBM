@@ -1,3 +1,59 @@
+<div align="center">
+
+# 🌐 Full-Stack Django Web Application
+
+A comprehensive full-stack web application built using the Django framework, demonstrating backend server logic, dynamic frontend rendering, and relational database management.
+
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-Web_Framework-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-Frontend-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![IBM](https://img.shields.io/badge/IBM-Capstone_Project-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](#)
+
+</div>
+
+---
+
+## 📌 Project Overview
+
+This repository serves as the capstone project for the **IBM Full-Stack Software Developer** curriculum. It demonstrates the end-to-end development of a database-driven web application using **Django**. 
+
+The project showcases the ability to handle user authentication, manage relational data using Django Models, route HTTP requests, and render dynamic content seamlessly using Django Templates and Bootstrap.
+
+---
+
+## 🏗️ Architecture: Model-View-Template (MVT)
+
+This application strictly adheres to Django's standard MVT design pattern to ensure a clean separation of concerns between the database layer, the business logic, and the user interface.
+
+```text
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│                 │ Request                 │       │                 │
+│ Browser / Client│ ──────> URL Dispatcher  │ ──────>   Django View   │
+│                 │ <──────                 │ <──────                 │
+└─────────────────┘ Response└─────────────────┘       └──────┬───┬──────┘
+                                                             │   │
+                                          Database Read/Write│   │Context Data
+                                                             ▼   ▼
+                                        ┌─────────────────┐ ┌───────────────┐
+                                        │  Django Models  │ │Django Template│
+                                        │ (SQLite/DB logic) │ (HTML / CSS)  │
+                                        └─────────────────┘ └───────────────┘
+```
+✨ Key Features Implemented
+•	User Authentication: Secure user registration, login, and logout functionality.
+•	Database Management: Custom Django Models mapping to a relational database to store users, entities, and reviews.
+•	Django Admin Integration: A fully configured superuser dashboard to easily manage database entries via a graphical interface.
+•	Dynamic Frontend: HTML templates infused with Django Template Language (DTL) tags to render server-side data directly to the user.
+•	Responsive UI: Integration with Bootstrap to ensure the application is mobile-friendly and highly accessible.
+
+🛠️ Core Tech Stack
+Category	Technologies Used	Purpose
+Backend Framework	Python, Django	Core server logic, routing, and HTTP request handling
+Frontend UI	HTML5, CSS3, Bootstrap	Structuring and styling the user-facing web pages
+Database	SQLite / ORM	Relational data storage managed via Django's ORM
+Version Control	Git, GitHub	Codebase management and continuous tracking
+
+
 # Django Cloud App with Database
 Overview
 This is a Django-based web application that allows users to explore courses, enroll, take exams, and view results. The app includes user authentication, instructor and learner roles, and dynamic course content management.
@@ -34,5 +90,32 @@ For your reference, we have prepared the ER diagram design for the new assesemen
 
 ![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
 =======
+⚙️ Local Setup & Execution
+To run this Django application on your local machine, follow these steps:
+1. Clone the Repository
+git clone [https://github.com/HAMED-PAYANDA/Django-final-project-IBM.git](https://github.com/HAMED-PAYANDA/Django-final-project-IBM.git)
+cd Django-final-project-IBM
 
+2. Install Dependencies
+Ensure you have Python installed, then install the required Django packages:
+python3 -m pip install -r requirements.txt
+
+3. Apply Database Migrations
+Prepare the SQLite database by applying the built-in and custom Django migrations:
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+4. Create a Superuser (Optional but Recommended)
+To access the Django Admin dashboard (/admin), create an administrative account:
+python3 manage.py createsuperuser
+
+5. Run the Development Server
+Launch the application locally:
+python3 manage.py runserver
+
+The application will now be accessible in your web browser at http://127.0.0.1:8000/.
+👤 Author
+Hamed Payanda
+•	GitHub: @HAMED-PAYANDA
+Completed as the Capstone Project for the IBM CognitiveClass.ai Full-Stack Software Developer Curriculum.
 
