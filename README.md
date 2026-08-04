@@ -128,6 +128,7 @@ python3 manage.py runserver
 ```
 
 The application will now be accessible in your web browser at http://127.0.0.1:8000/.
+
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
