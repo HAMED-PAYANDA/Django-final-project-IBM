@@ -97,29 +97,40 @@ For your reference, we have prepared the ER diagram design for the new assesemen
 ⚙️ Local Setup & Execution
 To run this Django application on your local machine, follow these steps:
 1. Clone the Repository
+```text
 git clone [https://github.com/HAMED-PAYANDA/Django-final-project-IBM.git](https://github.com/HAMED-PAYANDA/Django-final-project-IBM.git)
 cd Django-final-project-IBM
+```
 
 2. Install Dependencies
+```text
 Ensure you have Python installed, then install the required Django packages:
 python3 -m pip install -r requirements.txt
+```
 
 3. Apply Database Migrations
 Prepare the SQLite database by applying the built-in and custom Django migrations:
+```text
 python3 manage.py makemigrations
 python3 manage.py migrate
+```
 
 4. Create a Superuser (Optional but Recommended)
 To access the Django Admin dashboard (/admin), create an administrative account:
+```text
 python3 manage.py createsuperuser
+```
 
 5. Run the Development Server
 Launch the application locally:
+```text
 python3 manage.py runserver
+```
 
 The application will now be accessible in your web browser at http://127.0.0.1:8000/.
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
-Completed as the Capstone Project for the IBM CognitiveClass.ai Full-Stack Software Developer Curriculum.
+Completed as part of the IBM Full-Stack Software DeveloperProject for the IBM CognitiveClass.ai Full-Stack Software Developer Curriculum.
+
 
