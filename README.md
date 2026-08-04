@@ -47,12 +47,16 @@ This application strictly adheres to Django's standard MVT design pattern to ens
 •	Responsive UI: Integration with Bootstrap to ensure the application is mobile-friendly and highly accessible.
 
 🛠️ Core Tech Stack
-Category	Technologies Used	Purpose
-Backend Framework	Python, Django	Core server logic, routing, and HTTP request handling
-Frontend UI	HTML5, CSS3, Bootstrap	Structuring and styling the user-facing web pages
-Database	SQLite / ORM	Relational data storage managed via Django's ORM
-Version Control	Git, GitHub	Codebase management and continuous tracking
+## 🛠️ Core Tech Stack
 
+| Category | Technologies Used | Purpose |
+| :--- | :--- | :--- |
+| **Backend Framework**| Python, Django | Core server logic, routing, and HTTP request handling |
+| **Frontend UI** | HTML5, CSS3, Bootstrap | Structuring and styling the user-facing web pages |
+| **Database** | SQLite / ORM | Relational data storage managed via Django's ORM |
+| **Version Control** | Git, GitHub | Codebase management and continuous tracking |
+
+## ⚙️ Local Setup & Execution
 
 # Django Cloud App with Database
 Overview
