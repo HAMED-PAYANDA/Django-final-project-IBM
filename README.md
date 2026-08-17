@@ -4,7 +4,7 @@
 
 A comprehensive full-stack web application built using the Django framework, demonstrating backend server logic, dynamic frontend rendering, and relational database management.
 
-[![IBM Certification](https://img.shields.io/badge/IBM-Full_Stack_Developer-blue?style=flat-square&logo=ibm)](https://cognitiveclass.ai/)
+[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite_ORM-003B57?style=flat-square&logo=sqlite&logoColor=white)
