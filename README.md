@@ -7,6 +7,7 @@ A comprehensive full-stack web application built using the Django framework, dem
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-Web_Framework-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-Frontend-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
 [![IBM](https://img.shields.io/badge/IBM-Capstone_Project-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](#)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
