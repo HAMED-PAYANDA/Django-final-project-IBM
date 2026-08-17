@@ -8,6 +8,7 @@ A comprehensive full-stack web application built using the Django framework, dem
 [![Django](https://img.shields.io/badge/Django-Web_Framework-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-Frontend-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![IBM](https://img.shields.io/badge/IBM-Capstone_Project-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](#)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
 </div>
 
@@ -129,9 +130,11 @@ python3 manage.py runserver
 
 The application will now be accessible in your web browser at http://127.0.0.1:8000/.
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM Full-Stack Software DeveloperProject for the IBM CognitiveClass.ai Full-Stack Software Developer Curriculum.
+## 👤 Author
+
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM Full-Stack Software Developer Professional**.
+
 
 
