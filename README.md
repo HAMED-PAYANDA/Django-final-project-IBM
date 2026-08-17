@@ -25,6 +25,27 @@ This repository serves as the capstone project for the **IBM Full-Stack Software
 The project showcases the ability to handle user authentication, manage relational data using Django Models, route HTTP requests, and render dynamic content seamlessly using Django Templates and Bootstrap.
 
 ---
+## 📸 Visual Proof
+
+The following screenshots demonstrate the application's core functionality, backend routing, and database management capabilities.
+
+**1. Django Administration Dashboard**  
+*A comprehensive view of the secure superuser dashboard, showing all registered ORM models (Courses, Instructors, Learners, Lessons, Questions, and Submissions) mapping directly to the SQLite database.*
+![Django Administration Dashboard](03-admin-site.png)
+
+**2. Database Model Management**  
+*Demonstrating the ability to add, edit, and manage dynamic course content and exam questions directly through the built-in admin UI without manual SQL queries.*
+![Model Management](demo1.png)
+
+**3. Development Environment & URL Routing**  
+*A split-screen view showcasing the Cloud IDE (Theia) development environment. The top panel displays the custom Django URL dispatcher (`urls.py`) routing requests to specific views, while the bottom panel shows the live server reflecting database transactions.*
+![URL Routing & Dev Environment](demo2.png)
+
+**4. Dynamic Frontend & Exam Results**  
+*The learner-facing UI rendering dynamic course data. This view utilizes Django Template Language (DTL) and Bootstrap to conditionally display color-coded exam results and calculate final scores in real time.*
+![Frontend Exam Results](07-final.png)
+
+---
 
 ## 🏗️ Architecture: Model-View-Template (MVT)
 
@@ -99,6 +120,10 @@ Django-final-project-IBM/
 │   └── views.py               # Application views and request handling
 ├── static/                    # Static assets (CSS, admin files, uploaded course images)
 ├── .gitignore                 # Excluded system and environment files
+├── 03-admin-site.png          # UI Preview: Django admin dashboard
+├── 07-final.png               # UI Preview: Frontend exam results
+├── demo1.png                  # UI Preview: Admin model management
+├── demo2.png                  # UI Preview: Code IDE and URL routing
 ├── LICENSE                    # Apache 2.0 License
 ├── manage.py                  # Django command-line utility
 ├── manifest.yml               # IBM Cloud deployment manifest
