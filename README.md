@@ -4,12 +4,15 @@
 
 A comprehensive full-stack web application built using the Django framework, demonstrating backend server logic, dynamic frontend rendering, and relational database management.
 
-[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/Django-Web_Framework-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-Frontend-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
-[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
-[![IBM](https://img.shields.io/badge/IBM-Capstone_Project-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](#)
-[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
+[![IBM Certification](https://img.shields.io/badge/IBM-Full_Stack_Developer-blue?style=flat-square&logo=ibm)](https://cognitiveclass.ai/)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite_ORM-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
+![Git](https://img.shields.io/badge/Version_Control-Git_%26_GitHub-F05032?style=flat-square&logo=git&logoColor=white)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)](#)
 
 </div>
 
@@ -41,12 +44,35 @@ This application strictly adheres to Django's standard MVT design pattern to ens
                                         │ (SQLite/DB logic) │ (HTML / CSS)  │
                                         └─────────────────┘ └───────────────┘
 ```
-✨ Key Features Implemented
-•	User Authentication: Secure user registration, login, and logout functionality.
-•	Database Management: Custom Django Models mapping to a relational database to store users, entities, and reviews.
-•	Django Admin Integration: A fully configured superuser dashboard to easily manage database entries via a graphical interface.
-•	Dynamic Frontend: HTML templates infused with Django Template Language (DTL) tags to render server-side data directly to the user.
-•	Responsive UI: Integration with Bootstrap to ensure the application is mobile-friendly and highly accessible.
+This application strictly adheres to Django's standard MVT design pattern to ensure a clean separation of concerns between the database layer, the business logic, and the user interface.
+
+```mermaid
+graph TD
+    A[Browser / Client] -->|HTTP Request| B(URL Dispatcher)
+    B --> C(Django View)
+    
+    C -->|Query via ORM| D[(Django Models <br/> SQLite Database)]
+    D -->|Return Data| C
+    
+    C -->|Context Data| E[Django Templates <br/> HTML / CSS / Bootstrap]
+    E -->|Rendered HTML Response| A
+    
+    classDef django fill:#092E20,stroke:#fff,stroke-width:2px,color:#fff;
+    class B,C,D,E django;
+```
+
+----
+
+## ✨ Key Features Implemented
+
+* **User Authentication:** Secure user registration, login, and logout functionality with role-based access (Instructors vs. Learners).
+* **Course & Exam Management:** Instructors can manage courses and lessons. Learners can enroll, view lessons, and take multiple-choice exams.
+* **Dynamic Grading & Feedback:** Real-time exam grading with color-coded result displays (correct, wrong, not selected) and tracked submissions per learner.
+* **Database Management:** Custom Django Models mapped to a SQLite relational database to store users, courses, and exam entities.
+* **Django Admin Integration:** A fully configured superuser dashboard to easily manage database entries via a graphical interface.
+* **Responsive UI:** Integration with Bootstrap 4.5 to ensure the application is mobile-friendly and highly accessible.
+
+---
 
 🛠️ Core Tech Stack
 ## 🛠️ Core Tech Stack
@@ -57,6 +83,33 @@ This application strictly adheres to Django's standard MVT design pattern to ens
 | **Frontend UI** | HTML5, CSS3, Bootstrap | Structuring and styling the user-facing web pages |
 | **Database** | SQLite / ORM | Relational data storage managed via Django's ORM |
 | **Version Control** | Git, GitHub | Codebase management and continuous tracking |
+
+---
+
+## 📁 Repository Structure
+```text
+Django-final-project-IBM/
+├── myproject/                 # Main Django project configuration folder
+│   ├── settings.py            # Global application settings and database config
+│   └── urls.py                # Root URL dispatcher
+├── onlinecourse/              # Primary application containing business logic
+│   ├── migrations/            # Database migration history files
+│   ├── templates/             # HTML templates (course details, exams, etc.)
+│   ├── admin.py               # Django admin dashboard configuration
+│   ├── models.py              # Database schema definitions (ORM)
+│   ├── urls.py                # App-level URL routing
+│   └── views.py               # Application views and request handling
+├── static/                    # Static assets (CSS, admin files, uploaded course images)
+├── .gitignore                 # Excluded system and environment files
+├── LICENSE                    # Apache 2.0 License
+├── manage.py                  # Django command-line utility
+├── manifest.yml               # IBM Cloud deployment manifest
+├── Procfile                   # Cloud platform execution commands
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
+```
+
+---
 
 ## ⚙️ Local Setup & Execution
 
@@ -99,37 +152,41 @@ For your reference, we have prepared the ER diagram design for the new assesemen
 ⚙️ Local Setup & Execution
 To run this Django application on your local machine, follow these steps:
 1. Clone the Repository
-```text
+```bash
 git clone [https://github.com/HAMED-PAYANDA/Django-final-project-IBM.git](https://github.com/HAMED-PAYANDA/Django-final-project-IBM.git)
 cd Django-final-project-IBM
 ```
 
 2. Install Dependencies
-```text
 Ensure you have Python installed, then install the required Django packages:
+```bash
 python3 -m pip install -r requirements.txt
 ```
 
 3. Apply Database Migrations
 Prepare the SQLite database by applying the built-in and custom Django migrations:
-```text
+```bash
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
 
 4. Create a Superuser (Optional but Recommended)
 To access the Django Admin dashboard (/admin), create an administrative account:
-```text
+```bash
 python3 manage.py createsuperuser
 ```
 
 5. Run the Development Server
 Launch the application locally:
-```text
+```bash
 python3 manage.py runserver
 ```
 
 The application will now be accessible in your web browser at http://127.0.0.1:8000/.
+
+## 📜 General Notes & Deployment
+•	Cloud Deployment: This project includes a Procfile and manifest.yml and is configured for deployment on cloud platforms (defaulting to IBM Cloud Foundry).
+•	Database Flexibility: While SQLite3 is configured by default for local development, Django's ORM allows seamless transition to PostgreSQL or MySQL for production environments.
 
 ---
 
