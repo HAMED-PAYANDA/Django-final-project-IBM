@@ -44,7 +44,6 @@ This application strictly adheres to Django's standard MVT design pattern to ens
                                         │ (SQLite/DB logic) │ (HTML / CSS)  │
                                         └─────────────────┘ └───────────────┘
 ```
-This application strictly adheres to Django's standard MVT design pattern to ensure a clean separation of concerns between the database layer, the business logic, and the user interface.
 
 ```mermaid
 graph TD
@@ -74,7 +73,6 @@ graph TD
 
 ---
 
-🛠️ Core Tech Stack
 ## 🛠️ Core Tech Stack
 
 | Category | Technologies Used | Purpose |
@@ -110,8 +108,6 @@ Django-final-project-IBM/
 ```
 
 ---
-
-## ⚙️ Local Setup & Execution
 
 # Django Cloud App with Database
 Overview
@@ -149,7 +145,8 @@ For your reference, we have prepared the ER diagram design for the new assesemen
 
 ![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
 =======
-⚙️ Local Setup & Execution
+
+## ⚙️ Local Setup & Execution
 To run this Django application on your local machine, follow these steps:
 1. Clone the Repository
 ```bash
