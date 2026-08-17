@@ -130,6 +130,11 @@ python3 manage.py runserver
 
 The application will now be accessible in your web browser at http://127.0.0.1:8000/.
 
+---
+
+## License
+This project is licensed under the [Apache 2.0 License](LICENSE).
+
 ## 👤 Author
 
 **Hamed Payanda**
